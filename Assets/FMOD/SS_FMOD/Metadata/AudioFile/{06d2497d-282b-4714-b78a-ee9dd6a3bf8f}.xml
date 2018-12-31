@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{06d2497d-282b-4714-b78a-ee9dd6a3bf8f}">
+        <property name="assetPath">
+            <value>IMPACT BULLET ALUMINUM CAN LARGE 01.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>1.1866666666666668</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{eba560dc-1097-4e39-81ca-44c5efc0c58a}</destination>
+        </relationship>
+    </object>
+</objects>

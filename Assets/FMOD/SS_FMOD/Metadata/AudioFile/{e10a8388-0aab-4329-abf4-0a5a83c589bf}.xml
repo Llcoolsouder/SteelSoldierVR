@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{e10a8388-0aab-4329-abf4-0a5a83c589bf}">
+        <property name="assetPath">
+            <value>jet turbine main thrust.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>96</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>14.465635416666666</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{eba560dc-1097-4e39-81ca-44c5efc0c58a}</destination>
+        </relationship>
+    </object>
+</objects>

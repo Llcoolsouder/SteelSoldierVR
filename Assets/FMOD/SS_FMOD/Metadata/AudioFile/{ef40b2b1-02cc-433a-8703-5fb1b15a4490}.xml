@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{ef40b2b1-02cc-433a-8703-5fb1b15a4490}">
+        <property name="assetPath">
+            <value>Bullet impact metal gun fire hit_BLASTWAVEFX_18278.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>1.0439002267573696</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{eba560dc-1097-4e39-81ca-44c5efc0c58a}</destination>
+        </relationship>
+    </object>
+</objects>
