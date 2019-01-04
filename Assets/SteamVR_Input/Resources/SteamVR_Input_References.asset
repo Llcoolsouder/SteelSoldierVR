@@ -29,8 +29,8 @@ MonoBehaviour:
   - __actions_default_in_SkeletonRightHand
   - __actions_default_in_Squeeze
   - __actions_default_in_Fly
-  - __actions_default_in_Laser
   - __actions_default_in_Missile
+  - __actions_default_in_Laser
   - __actions_default_out_Haptic
   - __actions_platformer_in_Move
   - __actions_platformer_in_Jump
@@ -48,8 +48,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 17d7516459e71834fae77e2a349c024b, type: 2}
   - {fileID: 11400000, guid: 8f48bd1b5e0c035499502acd3caf52f4, type: 2}
   - {fileID: 11400000, guid: 5a401e72f71aca94697ef3838c6694b4, type: 2}
-  - {fileID: 11400000, guid: 30b3994b7bea41446972c71adbe1cf17, type: 2}
   - {fileID: 11400000, guid: 2d005e56364290e41a002678366da249, type: 2}
+  - {fileID: 11400000, guid: 30b3994b7bea41446972c71adbe1cf17, type: 2}
   - {fileID: 11400000, guid: 0b6dbc6592ce2d0488adb2f0a9f4a34d, type: 2}
   - {fileID: 11400000, guid: 172a682e366d41b4986cab96f0971fbd, type: 2}
   - {fileID: 11400000, guid: 4d9c2f3984319674d8d1f6ee38cfafdc, type: 2}

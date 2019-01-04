@@ -35,8 +35,8 @@ namespace Valve.VR
         
         public Valve.VR.SteamVR_Action_Single Fly;
         
-        public Valve.VR.SteamVR_Action_Boolean Laser;
-        
         public Valve.VR.SteamVR_Action_Boolean Missile;
+        
+        public Valve.VR.SteamVR_Action_Boolean Laser;
     }
 }

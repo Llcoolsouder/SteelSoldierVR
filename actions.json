@@ -36,6 +36,21 @@
       "requirement": "optional"
     },
     {
+      "name": "/actions/default/in/Fly",
+      "type": "vector1",
+      "requirement": "mandatory"
+    },
+    {
+      "name": "/actions/default/in/Missile",
+      "type": "boolean",
+      "requirement": "mandatory"
+    },
+    {
+      "name": "/actions/default/in/Laser",
+      "type": "boolean",
+      "requirement": "mandatory"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
@@ -112,7 +127,10 @@
       "/actions/buggybuddy/in/Brake": "Brake",
       "/actions/buggybuddy/in/Reset": "Reset",
       "/actions/platformer/in/Move": "Move",
-      "/actions/platformer/in/Jump": "Jump"
+      "/actions/platformer/in/Jump": "Jump",
+      "/actions/default/in/Fly": "Fly",
+      "/actions/default/in/Missile": "Missile",
+      "/actions/default/in/Laser": "Laser"
     }
   ]
 }

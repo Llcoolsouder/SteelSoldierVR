@@ -394,12 +394,16 @@ MonoBehaviour:
   thrust: 0
   missilePrefab: {fileID: 1990775046296602, guid: 66f5cee8907346244872dcc1554c08d3,
     type: 2}
+  explosionPrefab: {fileID: 0}
   flyAction: {fileID: 11400000, guid: 5a401e72f71aca94697ef3838c6694b4, type: 2}
   shootAction: {fileID: 11400000, guid: 30b3994b7bea41446972c71adbe1cf17, type: 2}
   missileAction: {fileID: 11400000, guid: 2d005e56364290e41a002678366da249, type: 2}
   myParent: {fileID: 4187319110201808}
   laserAudioPath: event:/LaserRay
   thrusterAudioPath: event:/Thruster
+  laserDamage: 0.01
+  audioLaser: {fileID: 0}
+  audioThruster: {fileID: 0}
 --- !u!114 &114456283375368722
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -492,9 +496,13 @@ MonoBehaviour:
   thrust: 0
   missilePrefab: {fileID: 1990775046296602, guid: 66f5cee8907346244872dcc1554c08d3,
     type: 2}
+  explosionPrefab: {fileID: 0}
   flyAction: {fileID: 11400000, guid: 5a401e72f71aca94697ef3838c6694b4, type: 2}
   shootAction: {fileID: 11400000, guid: 30b3994b7bea41446972c71adbe1cf17, type: 2}
   missileAction: {fileID: 11400000, guid: 2d005e56364290e41a002678366da249, type: 2}
   myParent: {fileID: 4187319110201808}
   laserAudioPath: event:/LaserRay
   thrusterAudioPath: event:/Thruster
+  laserDamage: 0.01
+  audioLaser: {fileID: 0}
+  audioThruster: {fileID: 0}

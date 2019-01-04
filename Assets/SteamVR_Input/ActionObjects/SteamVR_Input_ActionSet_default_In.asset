@@ -23,8 +23,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 17d7516459e71834fae77e2a349c024b, type: 2}
   - {fileID: 11400000, guid: 8f48bd1b5e0c035499502acd3caf52f4, type: 2}
   - {fileID: 11400000, guid: 5a401e72f71aca94697ef3838c6694b4, type: 2}
-  - {fileID: 11400000, guid: 30b3994b7bea41446972c71adbe1cf17, type: 2}
   - {fileID: 11400000, guid: 2d005e56364290e41a002678366da249, type: 2}
+  - {fileID: 11400000, guid: 30b3994b7bea41446972c71adbe1cf17, type: 2}
   InteractUI: {fileID: 11400000, guid: 84e692d4ffe86e143b902f4488dcb99f, type: 2}
   Teleport: {fileID: 11400000, guid: 30bdb4f7743b3f04097d1d0d539efe43, type: 2}
   GrabPinch: {fileID: 11400000, guid: 414714a228b905b448bdc50a53a34669, type: 2}
@@ -34,5 +34,5 @@ MonoBehaviour:
   SkeletonRightHand: {fileID: 11400000, guid: 17d7516459e71834fae77e2a349c024b, type: 2}
   Squeeze: {fileID: 11400000, guid: 8f48bd1b5e0c035499502acd3caf52f4, type: 2}
   Fly: {fileID: 11400000, guid: 5a401e72f71aca94697ef3838c6694b4, type: 2}
-  Laser: {fileID: 11400000, guid: 30b3994b7bea41446972c71adbe1cf17, type: 2}
   Missile: {fileID: 11400000, guid: 2d005e56364290e41a002678366da249, type: 2}
+  Laser: {fileID: 11400000, guid: 30b3994b7bea41446972c71adbe1cf17, type: 2}
