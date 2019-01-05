@@ -23,7 +23,7 @@ MonoBehaviour:
   - {fileID: 114746320763556994}
   MasterBankRef: {fileID: 114757452756202198}
   StringsBankRef: {fileID: 114861995707453718}
-  stringsBankWriteTime: 636807744503653838
+  stringsBankWriteTime: 636822132733425519
   cacheVersion: 2
 --- !u!114 &114014490854988978
 MonoBehaviour:
@@ -108,7 +108,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 114548309961111236}
+  - {fileID: 114415887568439794}
   MinDistance: 1
   MaxDistance: 20
   Length: 15428
@@ -145,6 +145,21 @@ MonoBehaviour:
   Name: Trigger
   Min: 0
   Max: 1
+  Default: 0
+--- !u!114 &114093021685250896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 100
   Default: 0
 --- !u!114 &114126167821311754
 MonoBehaviour:
@@ -295,6 +310,21 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114321843015322956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: LoopSection
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114342291510153766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,6 +339,36 @@ MonoBehaviour:
   Name: Trigger
   Min: 0
   Max: 1
+  Default: 0
+--- !u!114 &114358167440420358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Trigger
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114366790695079008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 100
   Default: 0
 --- !u!114 &114370456360470632
 MonoBehaviour:
@@ -329,6 +389,21 @@ MonoBehaviour:
   - Name: Desktop
     Value: 589312
   Exists: 0
+--- !u!114 &114415887568439794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Trigger
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114431451647798476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,6 +423,21 @@ MonoBehaviour:
   - Name: Desktop
     Value: 569568
   Exists: 0
+--- !u!114 &114455544700529048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Trigger
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114537721825204974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,6 +502,21 @@ MonoBehaviour:
   - Name: Desktop
     Value: 589312
   Exists: 0
+--- !u!114 &114621327859668438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Begin
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114641419400944572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,12 +655,27 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114641419400944572}
-  - {fileID: 114686681012032160}
-  - {fileID: 114014490854988978}
+  - {fileID: 114850817454445436}
+  - {fileID: 114621327859668438}
+  - {fileID: 114093021685250896}
   MinDistance: 0
   MaxDistance: 0
   Length: 82962
+--- !u!114 &114748524769751532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Health
+  Min: 0
+  Max: 100
+  Default: 0
 --- !u!114 &114757452756202198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -569,7 +689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: E:\Users\Lonnie II\Desktop\vr_finalproject\SteelSoldier\Assets\FMOD\SS_FMOD\Build\Desktop\Master
     Bank.bank
-  lastModified: 636807744503603973
+  lastModified: 636822132733385608
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -620,6 +740,21 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114850817454445436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: LoopSection
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114861995707453718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -632,7 +767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: Assets\FMOD\SS_FMOD\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636807744503653838
+  lastModified: 636822132733425519
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -657,7 +792,52 @@ MonoBehaviour:
   - Name: Desktop
     Value: 569568
   Exists: 1
+--- !u!114 &114940807175300202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Begin
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114950169768557070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Begin
+  Min: 0
+  Max: 1
+  Default: 0
 --- !u!114 &114985127742248090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: LoopSection
+  Min: 0
+  Max: 1
+  Default: 0
+--- !u!114 &114991319181562100
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -253,7 +253,6 @@ public class EnemyPlane : MonoBehaviour {
             Debug.Log("BULLET HIT! " + hit.collider.name);
             if (hit.collider.tag.Equals("Player"))
             {
-                //Insert player's damage function here
                 Debug.Log("Player hit!");
                 hit.collider.gameObject.GetComponent<PlayerStatus>().DamagePlayer(1.0f);
             }
@@ -312,7 +311,7 @@ public class EnemyPlane : MonoBehaviour {
     public void damage(float damageAmount)
     {
         currentHealth -= damageAmount;
-
+        Debug.Log(currentHealth);
         if (currentHealth <= 0)
         {
             AirTrafficControl.airControl.DestroyPlane(this);

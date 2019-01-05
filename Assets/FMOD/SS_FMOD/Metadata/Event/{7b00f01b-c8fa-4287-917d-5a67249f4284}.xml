@@ -56,7 +56,11 @@
             <destination>{afd07d1f-7be3-4b4a-914d-e198ed8ac366}</destination>
         </relationship>
     </object>
-    <object class="EventAutomatableProperties" id="{eea52a93-abca-49ab-a396-fc43152c6e03}"/>
+    <object class="EventAutomatableProperties" id="{eea52a93-abca-49ab-a396-fc43152c6e03}">
+        <property name="maxVoices">
+            <value>2</value>
+        </property>
+    </object>
     <object class="MarkerTrack" id="{d4175ebe-ad41-4ab7-a89f-4530faa411ee}"/>
     <object class="GroupTrack" id="{45e5fd2c-2990-4cde-b93b-62ef23a37f06}">
         <relationship name="modules">
@@ -147,13 +151,13 @@
     <object class="SpatialiserEffect" id="{6ce7a51c-9166-4bd1-9fdd-8245abc1aca5}"/>
     <object class="MultibandEqEffect" id="{b45c3450-2856-4197-a9b1-d7b90a9eafc7}">
         <property name="frequencyA">
-            <value>1650.62024</value>
+            <value>663.324829</value>
         </property>
         <property name="frequencyB">
             <value>21999.9902</value>
         </property>
         <property name="qualityA">
-            <value>0.840758622</value>
+            <value>3.34482741</value>
         </property>
         <property name="qualityB">
             <value>1.33120692</value>
