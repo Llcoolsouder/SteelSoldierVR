@@ -692,17 +692,18 @@ MonoBehaviour:
   flyAction: {fileID: 11400000, guid: 5a401e72f71aca94697ef3838c6694b4, type: 2}
   laserAction: {fileID: 11400000, guid: 30b3994b7bea41446972c71adbe1cf17, type: 2}
   missileAction: {fileID: 11400000, guid: 2d005e56364290e41a002678366da249, type: 2}
+  haptics: {fileID: 11400000, guid: 0b6dbc6592ce2d0488adb2f0a9f4a34d, type: 2}
   laserAudioPath: event:/LaserRay
   color: {r: 0.3537736, g: 0.9082813, b: 1, a: 0}
   laserThickness: 0.02
   facingAxis: 1
   laserLength: 100
   showCursor: 1
-  laserDamage: 1
+  laserDamage: 5
+  thrusterAudioPath: event:/Thruster
   missilePrefab: {fileID: 1461497293878664, guid: 56e0523e3d84e0c42a310305209d246a,
     type: 2}
   explosionPrefab: {fileID: 131164, guid: 3c5f4e32698bdb04eaed647f60310510, type: 2}
-  thrusterAudioPath: event:/Thruster
 --- !u!114 &114456283375368722
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -806,14 +807,15 @@ MonoBehaviour:
   flyAction: {fileID: 11400000, guid: 5a401e72f71aca94697ef3838c6694b4, type: 2}
   laserAction: {fileID: 11400000, guid: 30b3994b7bea41446972c71adbe1cf17, type: 2}
   missileAction: {fileID: 11400000, guid: 2d005e56364290e41a002678366da249, type: 2}
+  haptics: {fileID: 11400000, guid: 0b6dbc6592ce2d0488adb2f0a9f4a34d, type: 2}
   laserAudioPath: event:/LaserRay
   color: {r: 0.36320752, g: 0.89301264, b: 1, a: 0}
   laserThickness: 0.02
   facingAxis: 1
   laserLength: 100
   showCursor: 1
-  laserDamage: 1
+  laserDamage: 5
+  thrusterAudioPath: event:/Thruster
   missilePrefab: {fileID: 1461497293878664, guid: 56e0523e3d84e0c42a310305209d246a,
     type: 2}
   explosionPrefab: {fileID: 131164, guid: 3c5f4e32698bdb04eaed647f60310510, type: 2}
-  thrusterAudioPath: event:/Thruster

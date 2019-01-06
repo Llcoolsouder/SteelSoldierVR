@@ -308,10 +308,9 @@ public class EnemyPlane : MonoBehaviour {
         currentState = State.Seek;
     }
 
-    public void damage(float damageAmount)
+    public void Damage(float damageAmount)
     {
         currentHealth -= damageAmount;
-        Debug.Log(currentHealth);
         if (currentHealth <= 0)
         {
             AirTrafficControl.airControl.DestroyPlane(this);

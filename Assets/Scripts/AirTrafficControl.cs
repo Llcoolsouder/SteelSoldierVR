@@ -55,7 +55,7 @@ public class AirTrafficControl : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             EnemyPlane plane = allPlanes[Random.Range(0, allPlanes.Count - 1)];
-            plane.damage(150.0f);  //Should kill plane immediately
+            plane.Damage(150.0f);  //Should kill plane immediately
         }
         // DEBUG: MAKE SURE THIS GETS REMOVED
     }

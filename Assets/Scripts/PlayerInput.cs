@@ -10,11 +10,12 @@ public class PlayerInput : MonoBehaviour {
     }
 
     // Controller
-    public bool rightHand;
+    [SerializeField] bool rightHand;
     SteamVR_Input_Sources VR_Controller;
-    public SteamVR_Action_Single flyAction;
-    public SteamVR_Action_Boolean laserAction;
-    public SteamVR_Action_Boolean missileAction;
+    [SerializeField] SteamVR_Action_Single flyAction;
+    [SerializeField] SteamVR_Action_Boolean laserAction;
+    [SerializeField] SteamVR_Action_Boolean missileAction;
+    [SerializeField] SteamVR_Action_Vibration haptics;
 
     // Laser
     bool shootingLaser = false;
@@ -30,18 +31,17 @@ public class PlayerInput : MonoBehaviour {
     public float laserDamage = 0.01f;
     GameObject laserGraphic;
 
-    private Rigidbody body;
+    // Thruster
+    [FMODUnity.EventRef]
+    public string thrusterAudioPath;
+    FMOD.Studio.EventInstance thrusterAudio;
+    private Rigidbody playerRigidbody;
 
+    // Missile
     public GameObject missilePrefab;
     public GameObject explosionPrefab;
     float cooldownTime = 0;
     
-    
-    [FMODUnity.EventRef]
-    public string thrusterAudioPath;
-    FMOD.Studio.EventInstance thrusterAudio;
-    FMOD.Studio.ParameterInstance thrusterVol;
-
 
     // Use this for initialization
     void Start() {
@@ -58,7 +58,8 @@ public class PlayerInput : MonoBehaviour {
         laserGraphic.AddComponent<Rigidbody>().isKinematic = true;
         laserGraphic.layer = 2;
         
-        body = transform.GetComponentInParent<Rigidbody>();
+        // Find player's rigidbody
+        playerRigidbody = transform.GetComponentInParent<Rigidbody>();
     }
 
     void Update()
@@ -67,9 +68,8 @@ public class PlayerInput : MonoBehaviour {
         DoLaser();
 
         // Shoot missiles
-        if ((rightHand && missileAction.GetState(SteamVR_Input_Sources.RightHand) == true)
-            || (!rightHand && missileAction.GetState(SteamVR_Input_Sources.LeftHand) == true)) {
-
+        if (missileAction.GetState(VR_Controller))
+        {
             if (Time.time > cooldownTime + 1.0f) {
 
                 cooldownTime = Time.time;
@@ -89,40 +89,9 @@ public class PlayerInput : MonoBehaviour {
         }
     }
 
-    private void FixedUpdate() {
-        float flyValue = flyAction.GetAxis(SteamVR_Input_Sources.Any);
-        FMOD.Studio.PLAYBACK_STATE thrusterAudioState;
-        thrusterAudio.getPlaybackState(out thrusterAudioState);
-        thrusterVol.setValue(flyValue);
-        if (flyValue > 0.0f) {
-            if (thrusterAudioState != FMOD.Studio.PLAYBACK_STATE.PLAYING) {
-                thrusterAudio = FMODUnity.RuntimeManager.CreateInstance(thrusterAudioPath);
-                thrusterAudio.start();
-                FMODUnity.RuntimeManager.AttachInstanceToGameObject(thrusterAudio, transform, body);
-            }
-            Vector3 forceVector = -transform.forward * 10.0f * flyValue;
-            if ((transform.position.x >= 0.0f && transform.position.x < 500.0f) &&
-                (transform.position.y >= 0.0f && transform.position.y < 500.0f)) { // Out of bounds calculation
-                if (transform.position.y <= 70) {
-                    Vector3 newForce = forceVector;
-                    //if (body.velocity.x >= 100.0f) newForce.x = 100.0f;
-                    //if (body.velocity.y >= 100.0f) newForce.y = 100.0f;
-                    //if (body.velocity.z >= 100.0f) newForce.z = 100.0f;
-                    body.AddForce(newForce);
-                }
-            }
-            else {
-                Debug.Log("Going out of bounds. Bouncing back.");
-                Vector3 oldVelocity = body.velocity;
-                body.velocity = new Vector3(-oldVelocity.x, -oldVelocity.y, Mathf.Abs(oldVelocity.z));
-            }
-        }
-        else {
-            if (thrusterAudioState == FMOD.Studio.PLAYBACK_STATE.PLAYING) {
-                thrusterAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-            }
-        }
-
+    private void FixedUpdate()
+    {
+        DoThruster();    
     }
 
     // Handles input actions, graphics, and audio for the laser
@@ -138,7 +107,7 @@ public class PlayerInput : MonoBehaviour {
             {
                 laserAudio = FMODUnity.RuntimeManager.CreateInstance(laserAudioPath);
                 laserAudio.start();
-                FMODUnity.RuntimeManager.AttachInstanceToGameObject(laserAudio, transform, body);
+                FMODUnity.RuntimeManager.AttachInstanceToGameObject(laserAudio, transform, playerRigidbody);
             }
         }
         else if (laserAction.GetLastStateUp(VR_Controller))
@@ -163,7 +132,7 @@ public class PlayerInput : MonoBehaviour {
                 if (Time.time > laserCooldownTime + 0.1f)
                 {
                     laserCooldownTime = Time.time;
-                    hitObject.collider.GetComponent<EnemyPlane>().damage(laserDamage);
+                    hitObject.collider.GetComponent<EnemyPlane>().Damage(laserDamage);
                     Instantiate(explosionPrefab, hitObject.collider.transform.position, hitObject.collider.transform.rotation);
                 }
             }
@@ -203,6 +172,48 @@ public class PlayerInput : MonoBehaviour {
         else
         {
             return laserLength;
+        }
+    }
+
+    // Handles controller input/output, audio, and forces for thrusters
+    void DoThruster()
+    {
+        float flyValue = flyAction.GetAxis(VR_Controller);
+        FMOD.Studio.PLAYBACK_STATE thrusterAudioState;
+        thrusterAudio.getPlaybackState(out thrusterAudioState);
+        if (flyValue > 0.01f)
+        {
+            if (thrusterAudioState == FMOD.Studio.PLAYBACK_STATE.STOPPED)
+            {
+                thrusterAudio = FMODUnity.RuntimeManager.CreateInstance(thrusterAudioPath);
+                thrusterAudio.start();
+                FMODUnity.RuntimeManager.AttachInstanceToGameObject(thrusterAudio, transform, playerRigidbody);
+            }
+            thrusterAudio.setParameterValue("Trigger", flyValue);
+            haptics.Execute(0.0f, 0.005f, 50.0f, flyValue, VR_Controller);
+
+            // Calculate thruster force and check vertical bound
+            Vector3 thrusterForce = -transform.forward * 10.0f * flyValue;
+            if ((transform.position.x >= 0.0f && transform.position.x < 500.0f) &&
+                (transform.position.y >= 0.0f && transform.position.y < 500.0f))
+            {
+                if (transform.position.y <= 70)
+                {
+                    playerRigidbody.AddForce(thrusterForce);
+                }
+            }
+            else
+            {
+                playerRigidbody.velocity = new Vector3(playerRigidbody.velocity.x, -Mathf.Abs(playerRigidbody.velocity.y), playerRigidbody.velocity.z);
+            }
+        }
+        else
+        {
+            if (thrusterAudioState == FMOD.Studio.PLAYBACK_STATE.PLAYING)
+            {
+                thrusterAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                thrusterAudio.release();
+            }
         }
     }
 }
