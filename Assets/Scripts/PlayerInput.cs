@@ -40,7 +40,7 @@ public class PlayerInput : MonoBehaviour {
     // Missile
     public GameObject missilePrefab;
     public GameObject explosionPrefab;
-    float cooldownTime = 0;
+    float missileCooldownTime = 0;
     
 
     // Use this for initialization
@@ -64,29 +64,8 @@ public class PlayerInput : MonoBehaviour {
 
     void Update()
     {
-        // Shoot laser
         DoLaser();
-
-        // Shoot missiles
-        if (missileAction.GetState(VR_Controller))
-        {
-            if (Time.time > cooldownTime + 1.0f) {
-
-                cooldownTime = Time.time;
-                /*Vector3 createVector = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
-
-                Ray raycast = new Ray(transform.position, transform.forward);
-                Vector3 missileDirection = raycast.direction;
-                Vector3 rayPoint = raycast.GetPoint(10);
-                Vector3 relativePos = rayPoint - transform.position;*/
-
-                //Ray raycast = new Ray(transform.position, transform.forward);
-                //Vector3 rayPoint = raycast.GetPoint(10);
-
-                Instantiate(missilePrefab, this.transform.position, this.transform.rotation);
-                //Instantiate(missilePrefab, rayPoint, this.transform.rotation);
-            }
-        }
+        DoMissile();
     }
 
     private void FixedUpdate()
@@ -213,6 +192,19 @@ public class PlayerInput : MonoBehaviour {
             {
                 thrusterAudio.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                 thrusterAudio.release();
+            }
+        }
+    }
+
+    // Handles missile inputs
+    void DoMissile()
+    {
+        if (missileAction.GetState(VR_Controller))
+        {
+            if (Time.time > missileCooldownTime + 1.0f)
+            {
+                missileCooldownTime = Time.time;
+                Instantiate(missilePrefab, this.transform.position, this.transform.rotation*Quaternion.Euler(0, 90, 0));
             }
         }
     }

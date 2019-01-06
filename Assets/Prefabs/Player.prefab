@@ -701,7 +701,7 @@ MonoBehaviour:
   showCursor: 1
   laserDamage: 5
   thrusterAudioPath: event:/Thruster
-  missilePrefab: {fileID: 1461497293878664, guid: 56e0523e3d84e0c42a310305209d246a,
+  missilePrefab: {fileID: 1282845934857390, guid: b01b1574b41fd4d4aad269d71fbe87d5,
     type: 2}
   explosionPrefab: {fileID: 131164, guid: 3c5f4e32698bdb04eaed647f60310510, type: 2}
 --- !u!114 &114456283375368722
@@ -816,6 +816,6 @@ MonoBehaviour:
   showCursor: 1
   laserDamage: 5
   thrusterAudioPath: event:/Thruster
-  missilePrefab: {fileID: 1461497293878664, guid: 56e0523e3d84e0c42a310305209d246a,
+  missilePrefab: {fileID: 1282845934857390, guid: b01b1574b41fd4d4aad269d71fbe87d5,
     type: 2}
   explosionPrefab: {fileID: 131164, guid: 3c5f4e32698bdb04eaed647f60310510, type: 2}

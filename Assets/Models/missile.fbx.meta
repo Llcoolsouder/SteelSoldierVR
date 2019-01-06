@@ -36,17 +36,12 @@ ModelImporter:
     4300006: Fin3
     4300008: Fin2
     4300010: Fin1
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Missile
-    second: {fileID: 2100000, guid: 749ce96ee51ddd842bc13fbe96fbad05, type: 2}
+  externalObjects: {}
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
