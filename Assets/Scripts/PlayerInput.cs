@@ -133,7 +133,7 @@ public class PlayerInput : MonoBehaviour {
             laserGraphic.transform.localScale = new Vector3(setLength, setThickness, setThickness);
             laserGraphic.transform.localPosition = new Vector3(setLength, 0f, 0f);
         }
-        else
+        else // ZAxis
         {
             laserGraphic.transform.localRotation = Quaternion.Euler(90, 0, 0);
             laserGraphic.transform.localScale = new Vector3(setThickness, setLength, setThickness);

@@ -703,7 +703,8 @@ MonoBehaviour:
   thrusterAudioPath: event:/Thruster
   missilePrefab: {fileID: 1282845934857390, guid: b01b1574b41fd4d4aad269d71fbe87d5,
     type: 2}
-  explosionPrefab: {fileID: 131164, guid: 3c5f4e32698bdb04eaed647f60310510, type: 2}
+  explosionPrefab: {fileID: 1135360011611088, guid: 197333b7dfb8b0d4cae90fa544d24b6c,
+    type: 2}
 --- !u!114 &114456283375368722
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -818,4 +819,5 @@ MonoBehaviour:
   thrusterAudioPath: event:/Thruster
   missilePrefab: {fileID: 1282845934857390, guid: b01b1574b41fd4d4aad269d71fbe87d5,
     type: 2}
-  explosionPrefab: {fileID: 131164, guid: 3c5f4e32698bdb04eaed647f60310510, type: 2}
+  explosionPrefab: {fileID: 1135360011611088, guid: 197333b7dfb8b0d4cae90fa544d24b6c,
+    type: 2}
