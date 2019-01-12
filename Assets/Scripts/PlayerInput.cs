@@ -204,7 +204,7 @@ public class PlayerInput : MonoBehaviour {
             if (Time.time > missileCooldownTime + 1.0f)
             {
                 missileCooldownTime = Time.time;
-                Instantiate(missilePrefab, this.transform.position, this.transform.rotation*Quaternion.Euler(0, 90, 0));
+                Instantiate(missilePrefab, transform.position + transform.forward * 0.5f, this.transform.rotation*Quaternion.Euler(0, 90, 0));
             }
         }
     }

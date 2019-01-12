@@ -8,7 +8,7 @@
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000000067C8F048 isAsync 1 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000000001085AD18 isAsync 1 updatePeriod 0.02
 [LOG] Thread::initThread                       : Init FMOD Studio update thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
@@ -23,592 +23,682 @@
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26784
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 32736
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000705AF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005289F5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFDBEFB5EC0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFDBEFB5E90
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFDBEFB5F90
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFDBEFB6040
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000595FBAE8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF85A3F5EC0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF85A3F5E90
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF85A3F5F90
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF85A3F6040
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000184F6558
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='laser_ray2', format=2, channels=2, frequency=48000, lengthbytes=51936, lengthpcm=159663, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.425812.
-[LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Priority: 1, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E3518 : node = 000000000D9126B0
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E3518
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000000D9127C8
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] Thread::initThread                       :     Init FMOD file thread. Priority: 1, Stack Size: 16384, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E3518
-[LOG] SoundI::getSubSound                      : sound 000000001E6E3518.  Subsound index 0 / 1
-[LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E3BD8 : node = 000000000D912170
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E3BD8
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000000D912288
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E3BD8
-[LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E40E8 : node = 000000000D912410
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E40E8
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000000D912528
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSound                     :     filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 000000001E6E3A28 : node = 000000000D912020
-[LOG] SystemI::createSound                     :     add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] SoundI::getSubSound                      :     sound 000000001E6E3BD8.  Subsound index 0 / 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E40E8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E3A28
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000000D912138
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E3A28
-[LOG] SoundI::getSubSound                      : sound 000000001E6E40E8.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 000000001E6E3A28.  Subsound index 0 / 1
-[LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E3F38 : node = 000000000D9122C0
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E3F38
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000000D9123D8
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E3F38
-[LOG] SoundI::getSubSound                      : sound 000000001E6E3F38.  Subsound index 0 / 1
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Whooshes fast rocket 09', format=2, channels=2, frequency=48000, lengthbytes=22784, lengthpcm=84736, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.919342.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 26784
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 32736
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000000705AF5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005289F5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFDBEFB5EC0
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFDBEFB5E90
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFDBEFB5F90
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFDBEFB6040
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000595FC9C8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF85A3F5EC0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF85A3F5E90
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF85A3F5F90
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF85A3F6040
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000184F6558
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Whooshes fast rocket 08', format=2, channels=2, frequency=48000, lengthbytes=24960, lengthpcm=93437, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.913757.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 32736
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005289F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF85A3F5EC0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF85A3F5E90
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF85A3F5F90
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF85A3F6040
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000184F6558
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Whooshes fast rocket 01', format=2, channels=2, frequency=48000, lengthbytes=20960, lengthpcm=76303, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.752258.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 32736
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005289F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF85A3F5EC0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF85A3F5E90
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF85A3F5F90
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF85A3F6040
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000184F6118
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FireExplosion6', format=2, channels=2, frequency=48000, lengthbytes=16704, lengthpcm=60222, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988678.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 32736
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005289F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF85A3F5EC0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF85A3F5E90
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF85A3F5F90
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF85A3F6040
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000184F6118
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FireExplosion3', format=2, channels=2, frequency=48000, lengthbytes=19648, lengthpcm=70635, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.757355.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 32736
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005289F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF85A3F5EC0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF85A3F5E90
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF85A3F5F90
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF85A3F6040
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000184F6118
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FireExplosion4', format=2, channels=2, frequency=48000, lengthbytes=25632, lengthpcm=91013, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.803406.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 32736
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005289F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF85A3F5EC0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF85A3F5E90
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF85A3F5F90
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF85A3F6040
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000184F6118
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FireExplosion7', format=2, channels=2, frequency=48000, lengthbytes=21728, lengthpcm=100310, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.747681.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 32736
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005289F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF85A3F5EC0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF85A3F5E90
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF85A3F5F90
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF85A3F6040
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000184F6118
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FireExplosion2', format=2, channels=2, frequency=48000, lengthbytes=25376, lengthpcm=91755, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.723572.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 32736
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005289F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF85A3F5EC0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF85A3F5E90
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF85A3F5F90
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF85A3F6040
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000184F6118
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FireExplosion9', format=2, channels=2, frequency=48000, lengthbytes=22304, lengthpcm=119951, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 32736
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005289F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF85A3F5EC0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF85A3F5E90
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF85A3F5F90
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF85A3F6040
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000184F6118
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FireExplosion1', format=2, channels=2, frequency=48000, lengthbytes=37184, lengthpcm=136936, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.749695.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 32736
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005289F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF85A3F5EC0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF85A3F5E90
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF85A3F5F90
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF85A3F6040
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000184F6118
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FireExplosion5', format=2, channels=2, frequency=48000, lengthbytes=32096, lengthpcm=115397, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.975311.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 32736
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005289F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF85A3F5EC0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF85A3F5E90
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF85A3F5F90
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF85A3F6040
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000184F6118
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='FireExplosion8', format=2, channels=2, frequency=48000, lengthbytes=22240, lengthpcm=121601, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999969.
+[LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C1EE38 : node = 000000000E012190
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C1EE38
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000000E0122A8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C1EE38
+[LOG] SoundI::getSubSound                      : sound 0000000053C1EE38.  Subsound index 0 / 1
+[LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C20938 : node = 000000000E012C10
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C20938
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000000E012D28
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C20938
+[LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C1F4F8 : node = 0000000053E6BD10
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C1F4F8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053E6BE28
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000000053C1FD68 : node = 0000000053E6BE60
+[LOG] SystemI::createSound                     :     add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] SoundI::getSubSound                      :     sound 0000000053C20938.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C1F4F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C1FD68
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053E6BF78
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C1FD68
+[LOG] SoundI::getSubSound                      : sound 0000000053C1F4F8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 0000000053C1FD68.  Subsound index 0 / 1
+[LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C1EFE8 : node = 0000000053E6B7D0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C1EFE8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053E6B8E8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C1EFE8
+[LOG] SoundI::getSubSound                      : sound 0000000053C1EFE8.  Subsound index 0 / 1
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 32736
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005289F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF85A3F5EC0
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF85A3F5E90
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF85A3F5F90
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF85A3F6040
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000184F6558
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Firefight AT - XY 01', format=2, channels=2, frequency=48000, lengthbytes=18080, lengthpcm=70807, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988473.
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E3518)
-[LOG] SoundI::release                          :     jet turbine main thrust (00000000596BEBE8)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E36C8)
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E2798
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E2798
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C1EE38)
+[LOG] SoundI::release                          :     jet turbine main thrust (000000001843D698)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C20278)
 [LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E25E8 : node = 000000000D9126B0
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E25E8
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C1FF18 : node = 0000000053E6B290
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C1FF18
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000000D9127C8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053E6B3A8
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E25E8
-[LOG] SoundI::getSubSound                      : sound 000000001E6E25E8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C1FF18
+[LOG] SoundI::getSubSound                      : sound 0000000053C1FF18.  Subsound index 0 / 1
 [LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E31B8 : node = 0000000059899280
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E31B8
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C1EE38 : node = 0000000053E6B140
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C1EE38
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000059899398
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053E6B258
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E31B8
-[LOG] SoundI::getSubSound                      : sound 000000001E6E31B8.  Subsound index 0 / 1
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E40E8)
-[LOG] SoundI::release                          :     jet turbine main thrust (00000000596BDBA8)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E2798)
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E3A28)
-[LOG] SoundI::release                          :     jet turbine main thrust (00000000596BDD48)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E3D88)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C1EE38
+[LOG] SoundI::getSubSound                      : sound 0000000053C1EE38.  Subsound index 0 / 1
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C1F4F8)
+[LOG] SoundI::release                          :     jet turbine main thrust (000000001843D358)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C1FBB8)
 [LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E3D88 : node = 0000000059898410
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E3D88
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C20278 : node = 0000000053E6B3E0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C20278
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000059898528
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='thruster1', format=2, channels=2, frequency=48000, lengthbytes=332320, lengthpcm=1264197, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.650543.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E3D88
-[LOG] SoundI::getSubSound                      : sound 000000001E6E3D88.  Subsound index 0 / 1
-[LOG] SoundI::release                          : thruster1 (000000001E6E3D88)
-[LOG] SoundI::release                          :     thruster1 (000000000BB59AE8)
-[LOG] SoundI::release                          :     thruster1 (000000001E6E2798)
-[LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E3D88 : node = 0000000059898D40
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E3D88
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000059898E58
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053E6B4F8
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E3D88
-[LOG] SoundI::getSubSound                      : sound 000000001E6E3D88.  Subsound index 0 / 1
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E3BD8)
-[LOG] SoundI::release                          :     jet turbine main thrust (00000000596BD388)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E3878)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C20278
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C1FD68)
+[LOG] SoundI::release                          :     jet turbine main thrust (000000001843D4F8)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C20788)
+[LOG] SoundI::getSubSound                      : sound 0000000053C20278.  Subsound index 0 / 1
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C20938)
+[LOG] SoundI::release                          :     jet turbine main thrust (000000001843D018)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C1EC88)
 [LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E2CA8 : node = 0000000059898AA0
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E2CA8
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C1F348 : node = 0000000053E6BE60
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C1F348
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000059898BB8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053E6BF78
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E2CA8
-[LOG] SoundI::getSubSound                      : sound 000000001E6E2CA8.  Subsound index 0 / 1
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E3F38)
-[LOG] SoundI::release                          :     jet turbine main thrust (00000000596BDEE8)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E4298)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C1F348
+[LOG] SoundI::getSubSound                      : sound 0000000053C1F348.  Subsound index 0 / 1
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C1EFE8)
+[LOG] SoundI::release                          :     jet turbine main thrust (00000000184A83E8)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C1FA08)
 [LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E36C8 : node = 0000000059897D80
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E36C8
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C1EFE8 : node = 0000000053E6B680
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C1EFE8
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000059897E98
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053E6B798
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E36C8
-[LOG] SoundI::getSubSound                      : sound 000000001E6E36C8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C1EFE8
+[LOG] SoundI::getSubSound                      : sound 0000000053C1EFE8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C1FF18)
+[LOG] SoundI::release                          :     jet turbine main thrust (00000000184A7D68)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C1F858)
 [LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E3BD8 : node = 0000000059898410
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E3BD8
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C1F4F8 : node = 0000000053E6B7D0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C1F4F8
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000059898528
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053E6B8E8
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E3BD8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E2AF8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E2AF8
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E25E8)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000000BB59FC8)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E3518)
-[LOG] SoundI::getSubSound                      : sound 000000001E6E3BD8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C1F4F8
+[LOG] SoundI::getSubSound                      : sound 0000000053C1F4F8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C1EE38)
+[LOG] SoundI::release                          :     jet turbine main thrust (00000000184DD708)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C200C8)
 [LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E3008 : node = 00000000598993D0
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E3008
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C1F858 : node = 0000000053E6BBC0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C1F858
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000598994E8
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='thruster1', format=2, channels=2, frequency=48000, lengthbytes=332320, lengthpcm=1264197, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.650543.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E3008
-[LOG] SoundI::getSubSound                      : sound 000000001E6E3008.  Subsound index 0 / 1
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E3878
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E3878
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E31B8)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000000BB59948)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E2AF8)
-[LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E3518 : node = 0000000059898BF0
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E3518
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000059898D08
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053E6BCD8
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E3518
-[LOG] SoundI::getSubSound                      : sound 000000001E6E3518.  Subsound index 0 / 1
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E3D88)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000000BB59AE8)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E3A28)
-[LOG] SoundI::release                          : thruster1 (000000001E6E3008)
-[LOG] SoundI::release                          :     thruster1 (00000000596BDD48)
-[LOG] SoundI::release                          :     thruster1 (000000001E6E40E8)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C1F858
+[LOG] SoundI::getSubSound                      : sound 0000000053C1F858.  Subsound index 0 / 1
 [LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E2798 : node = 0000000059899280
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E2798
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C1FA08 : node = 0000000053E6B920
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C1FA08
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000059899398
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053E6BA38
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E2798
-[LOG] SoundI::getSubSound                      : sound 000000001E6E2798.  Subsound index 0 / 1
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E2CA8)
-[LOG] SoundI::release                          :     jet turbine main thrust (00000000596BEBE8)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E2E58)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C1FA08
+[LOG] SoundI::getSubSound                      : sound 0000000053C1FA08.  Subsound index 0 / 1
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C20278)
+[LOG] SoundI::release                          :     jet turbine main thrust (000000001843D358)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C1FBB8)
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C1F348)
+[LOG] SoundI::release                          :     jet turbine main thrust (000000001843D018)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C1F198)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C20428
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C20428
 [LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E40E8 : node = 0000000059897C30
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E40E8
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C1EE38 : node = 0000000053E6BA70
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C1EE38
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000059897D48
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053E6BB88
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E40E8
-[LOG] SoundI::getSubSound                      : sound 000000001E6E40E8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C1EE38
+[LOG] SoundI::getSubSound                      : sound 0000000053C1EE38.  Subsound index 0 / 1
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C1EFE8)
+[LOG] SoundI::release                          :     jet turbine main thrust (000000001843D698)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C20938)
 [LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E2CA8 : node = 00000000598993D0
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E2CA8
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C205D8 : node = 0000000053E6B290
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C205D8
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000598994E8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053E6B3A8
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E2CA8
-[LOG] SoundI::getSubSound                      : sound 000000001E6E2CA8.  Subsound index 0 / 1
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E36C8)
-[LOG] SoundI::release                          :     jet turbine main thrust (00000000596BDBA8)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E3878)
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E3BD8)
-[LOG] SoundI::release                          :     jet turbine main thrust (00000000596BD388)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E3F38)
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E3008
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E3008
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C205D8
+[LOG] SoundI::getSubSound                      : sound 0000000053C205D8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C1F4F8)
+[LOG] SoundI::release                          :     jet turbine main thrust (000000001843D4F8)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C20428)
 [LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E2AF8 : node = 0000000059898410
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E2AF8
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C1F348 : node = 0000000053E6B140
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C1F348
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000059898528
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053E6B258
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E2AF8
-[LOG] SoundI::getSubSound                      : sound 000000001E6E2AF8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C1F348
+[LOG] SoundI::getSubSound                      : sound 0000000053C1F348.  Subsound index 0 / 1
 [LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E2E58 : node = 0000000059898800
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E2E58
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C1FF18 : node = 0000000053E6B530
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C1FF18
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000059898918
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053E6B648
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E2E58
-[LOG] SoundI::getSubSound                      : sound 000000001E6E2E58.  Subsound index 0 / 1
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E2798)
-[LOG] SoundI::release                          :     jet turbine main thrust (00000000596BDD48)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E3A28)
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E3518)
-[LOG] SoundI::release                          :     jet turbine main thrust (00000000596BDEE8)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E31B8)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C1FF18
+[LOG] SoundI::getSubSound                      : sound 0000000053C1FF18.  Subsound index 0 / 1
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C1FA08)
+[LOG] SoundI::release                          :     jet turbine main thrust (00000000184A7D68)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C1EC88)
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C1F858)
+[LOG] SoundI::release                          :     jet turbine main thrust (00000000184A83E8)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C20788)
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C1EFE8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C1EFE8
 [LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E2798 : node = 0000000059898E90
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E2798
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C1F4F8 : node = 0000000053E6B3E0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C1F4F8
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000059898FA8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053E6B4F8
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E2798
-[LOG] SoundI::getSubSound                      : sound 000000001E6E2798.  Subsound index 0 / 1
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E2798)
-[LOG] SoundI::release                          :     jet turbine main thrust (00000000596BD388)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E3518)
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E40E8)
-[LOG] SoundI::release                          :     jet turbine main thrust (00000000596BEBE8)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E3008)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C1F4F8
+[LOG] SoundI::getSubSound                      : sound 0000000053C1F4F8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C1EE38)
+[LOG] SoundI::release                          :     jet turbine main thrust (00000000184DD708)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C20278)
 [LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E3008 : node = 00000000598997C0
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E3008
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C1EC88 : node = 0000000053E6B680
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C1EC88
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000598998D8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053E6B798
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E3008
-[LOG] SoundI::getSubSound                      : sound 000000001E6E3008.  Subsound index 0 / 1
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E2CA8)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000000BB59948)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E4298)
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E2798
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E2798
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E3008)
-[LOG] SoundI::release                          :     jet turbine main thrust (00000000596BDBA8)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E2798)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C1EC88
+[LOG] SoundI::getSubSound                      : sound 0000000053C1EC88.  Subsound index 0 / 1
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C205D8)
+[LOG] SoundI::release                          :     jet turbine main thrust (000000001843D358)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C1FD68)
 [LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E31B8 : node = 0000000059899130
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E31B8
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C205D8 : node = 0000000053E6B7D0
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C205D8
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000059899248
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053E6B8E8
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E31B8
-[LOG] SoundI::getSubSound                      : sound 000000001E6E31B8.  Subsound index 0 / 1
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E2AF8)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000000BB59AE8)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E36C8)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C205D8
+[LOG] SoundI::getSubSound                      : sound 0000000053C205D8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C1F348)
+[LOG] SoundI::release                          :     jet turbine main thrust (000000001843D018)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C1EFE8)
 [LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E2AF8 : node = 00000000598982C0
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E2AF8
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C1FBB8 : node = 0000000053E6BE60
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C1FBB8
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000598983D8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053E6BF78
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E2AF8
-[LOG] SoundI::getSubSound                      : sound 000000001E6E2AF8.  Subsound index 0 / 1
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E2E58)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000000BB59FC8)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E3F38)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C1FBB8
+[LOG] SoundI::getSubSound                      : sound 0000000053C1FBB8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C1FF18)
+[LOG] SoundI::release                          :     jet turbine main thrust (000000001843D4F8)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C200C8)
 [LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E2E58 : node = 0000000059898950
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E2E58
+[LOG] SystemI::createSound                     : setdata soundi = 0000000053C1F198 : node = 0000000053E6BA70
+[LOG] SystemI::createSound                     : add node to async list : head = 000000001843CC88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000053C1F198
 [LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3837600
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 32736
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000059898A68
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000053E6BB88
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E2E58
-[LOG] SoundI::getSubSound                      : sound 000000001E6E2E58.  Subsound index 0 / 1
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E31B8)
-[LOG] SoundI::release                          :     jet turbine main thrust (00000000596BDBA8)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E3878)
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E2AF8)
-[LOG] SoundI::release                          :     jet turbine main thrust (00000000596BDD48)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E40E8)
-[LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E2AF8 : node = 0000000059898800
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E2AF8
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000059898918
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E2AF8
-[LOG] SoundI::getSubSound                      : sound 000000001E6E2AF8.  Subsound index 0 / 1
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E2E58)
-[LOG] SoundI::release                          :     jet turbine main thrust (00000000596BEBE8)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E3D88)
-[LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E36C8 : node = 0000000059898410
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E36C8
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000059898528
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E36C8
-[LOG] SoundI::getSubSound                      : sound 000000001E6E36C8.  Subsound index 0 / 1
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E2AF8)
-[LOG] SoundI::release                          :     jet turbine main thrust (00000000596BD388)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E3518)
-[LOG] SystemI::createSound                     : filename = Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000000001E6E3BD8 : node = 00000000598993D0
-[LOG] SystemI::createSound                     : add node to async list : head = 00000000596BDB58.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000000001E6E3BD8
-[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\SS_FMOD\Build\Desktop/Master Bank.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3545248
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 26784
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000598994E8
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='jet turbine main thrust', format=2, channels=2, frequency=48000, lengthbytes=167392, lengthpcm=694350, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430064.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000000001E6E3BD8
-[LOG] SoundI::getSubSound                      : sound 000000001E6E3BD8.  Subsound index 0 / 1
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E36C8)
-[LOG] SoundI::release                          :     jet turbine main thrust (00000000596BEBE8)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E2798)
-[LOG] SoundI::release                          : jet turbine main thrust (000000001E6E3BD8)
-[LOG] SoundI::release                          :     jet turbine main thrust (00000000596BDBA8)
-[LOG] SoundI::release                          :     jet turbine main thrust (000000001E6E25E8)
-[LOG] SoundI::release                          :  (0000000058F3EAB8)
-[LOG] SoundI::release                          :     Firefight AT - XY 01 (00000000596BD528)
-[LOG] SoundI::release                          :  (0000000058F3FBF8)
-[LOG] SoundI::release                          :     laser_ray2 (00000000596BEA48)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000053C1F198
+[LOG] SoundI::getSubSound                      : sound 0000000053C1F198.  Subsound index 0 / 1
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C1F4F8)
+[LOG] SoundI::release                          :     jet turbine main thrust (000000001843D698)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C1F858)
+[LOG] SoundI::release                          :  (0000000053E479C8)
+[LOG] SoundI::release                          :     Firefight AT - XY 01 (00000000184A7A28)
+[LOG] SoundI::release                          :  (0000000010A3F9A8)
+[LOG] SoundI::release                          :     Whooshes fast rocket 01 (0000000053D2A1F8)
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C205D8)
+[LOG] SoundI::release                          :     jet turbine main thrust (00000000184A83E8)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C1FA08)
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C1EC88)
+[LOG] SoundI::release                          :     jet turbine main thrust (00000000184A7D68)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C1EE38)
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C1FBB8)
+[LOG] SoundI::release                          :     jet turbine main thrust (000000001843D018)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C1FD68)
+[LOG] SoundI::release                          : jet turbine main thrust (0000000053C1F198)
+[LOG] SoundI::release                          :     jet turbine main thrust (000000001843D358)
+[LOG] SoundI::release                          :     jet turbine main thrust (0000000053C1FF18)
+[LOG] SoundI::release                          :  (0000000010A410A8)
+[LOG] SoundI::release                          :     Whooshes fast rocket 08 (0000000053D2A058)
+[LOG] SoundI::release                          :  (0000000010A40F38)
+[LOG] SoundI::release                          :     Whooshes fast rocket 09 (0000000053D294F8)
+[LOG] SoundI::release                          :  (0000000053E47F88)
+[LOG] SoundI::release                          :     FireExplosion1 (0000000053D2AA18)
+[LOG] SoundI::release                          :  (0000000053CB09C8)
+[LOG] SoundI::release                          :     FireExplosion2 (0000000053D28E78)
+[LOG] SoundI::release                          :  (0000000010A40978)
+[LOG] SoundI::release                          :     FireExplosion3 (0000000053D29018)
+[LOG] SoundI::release                          :  (0000000010A40AE8)
+[LOG] SoundI::release                          :     FireExplosion4 (0000000053D2A538)
+[LOG] SoundI::release                          :  (0000000053E47E18)
+[LOG] SoundI::release                          :     FireExplosion5 (000000001843E1F8)
+[LOG] SoundI::release                          :  (0000000010A40528)
+[LOG] SoundI::release                          :     FireExplosion6 (0000000053D2A398)
+[LOG] SoundI::release                          :  (0000000053CB06E8)
+[LOG] SoundI::release                          :     FireExplosion7 (0000000053D2A6D8)
+[LOG] SoundI::release                          :  (0000000053E48548)
+[LOG] SoundI::release                          :     FireExplosion8 (000000001843CCD8)
+[LOG] SoundI::release                          :  (0000000053CB10F8)
+[LOG] SoundI::release                          :     FireExplosion9 (0000000053D2A878)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
@@ -618,6 +708,4 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
-[LOG] Thread::callback                         : FMOD file thread finished.
 [LOG] SystemI::close                           : Closed.

@@ -26,7 +26,11 @@ public class Missile : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Missile collided with " + other.transform.tag);
-        if (other.transform.tag == "fighterJet")
+        if (other.transform.tag == "Player")
+        {
+            return;
+        }
+        else if (other.transform.tag == "fighterJet")
         {
             other.gameObject.GetComponent<EnemyPlane>().Damage(missileDamage);
         }
@@ -41,6 +45,26 @@ public class Missile : MonoBehaviour
 
     void Explode()
     {
+        DeleteMissile();
+        GameObject explosion = Instantiate(explosionPrefab, transform.position, transform.rotation, transform);
+        ParticleSystem shrapnel = explosion.transform.Find("FireShrapnel").GetComponent<ParticleSystem>();
+        Destroy(this.gameObject, shrapnel.main.duration + shrapnel.main.startLifetime.constantMax);
+        Debug.Log("Shrapnel Life: " + shrapnel.main.startLifetime.constantMax);
+    }
 
+    void DeleteMissile()
+    {
+        foreach (Transform child in transform)
+        {
+            if (child.name != "RocketTrailFire" && child.name != "RocketTrailSmoke")
+            {
+                Destroy(child.gameObject);
+            }
+            else
+            {
+                // Allows trail time to play out. Will be deleted when the rest of this object is Destroyed
+                child.GetComponent<ParticleSystem>().Stop(true, ParticleSystemStopBehavior.StopEmitting);
+            }
+        }
     }
 }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{a5c4e213-620a-4105-a989-be512a1d7ffc}">
+        <property name="assetPath">
+            <value>FireShoot3.ogg</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>2.6956916099773243</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{eba560dc-1097-4e39-81ca-44c5efc0c58a}</destination>
+        </relationship>
+    </object>
+</objects>
