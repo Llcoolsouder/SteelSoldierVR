@@ -7,15 +7,20 @@ public class Missile : MonoBehaviour
     [SerializeField] float missileDamage = 150.0f;
     [SerializeField] float missileSpeed = 15.0f;
     const float missileTimeout = 5.5f;
-
+    [SerializeField, FMODUnity.EventRef] string missileFirePath;
+    FMOD.Studio.EventInstance missileFireSound;
     [SerializeField] GameObject explosionPrefab;
-
+    
 
     // Use this for initialization
     private void Start()
     {
         // If missile never hits anything, delete it after timeout
         StartCoroutine(DeleteObjectAfterDelay());
+
+        missileFireSound = FMODUnity.RuntimeManager.CreateInstance(missileFirePath);
+        missileFireSound.start();
+        FMODUnity.RuntimeManager.AttachInstanceToGameObject(missileFireSound, this.transform, this.GetComponent<Rigidbody>());
     }
 
     private void Update()
@@ -45,6 +50,14 @@ public class Missile : MonoBehaviour
 
     void Explode()
     {
+        FMOD.Studio.PLAYBACK_STATE missileFireState;
+        missileFireSound.getPlaybackState(out missileFireState);
+        if (missileFireState == FMOD.Studio.PLAYBACK_STATE.PLAYING)
+        {
+            missileFireSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        }
+        missileFireSound.release();
+
         DeleteMissile();
         GameObject explosion = Instantiate(explosionPrefab, transform.position, transform.rotation, transform);
         ParticleSystem shrapnel = explosion.transform.Find("FireShrapnel").GetComponent<ParticleSystem>();
