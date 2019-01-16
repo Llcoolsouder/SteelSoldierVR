@@ -25,10 +25,7 @@ public class ObjectiveManager : MonoBehaviour {
 
     public GameObject AirTrafficPlayer;
     public GameObject AirTrafficBase;
-
-    //AirTrafficControl airTrafficPlayer = AirTrafficPlayer.GetComponent<AirTrafficControl>();
-    //AirTrafficControl airTrafficBase = AirTrafficBase.GetComponent<AirTrafficControl>();
-
+    
     public GameObject HUDTutorial;
     public GameObject HUDWaveIncoming;
     public GameObject HUDWaveCount;

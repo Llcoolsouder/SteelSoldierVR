@@ -771,7 +771,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -812,8 +812,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 50
   P: -1
-  I: -2
-  D: -1
+  I: 0.01
+  D: 0.06
   dirtParticleFX: {fileID: 198111823260618062, guid: 90abf1b79e8db7a43b8ec00a7de475b9,
     type: 2}
   smokeParticleFX: {fileID: 198683013784916216, guid: 3bfb9a9943e45484d9c0f59bd6f6e0fd,

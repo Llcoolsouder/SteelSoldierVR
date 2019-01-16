@@ -5,8 +5,8 @@ using UnityEngine;
 public class EnemyPlane : MonoBehaviour {
 
     Transform target = null; // Player
-    [SerializeField]
-    float speed = 100.0f;
+    [SerializeField] float speed = 100.0f;
+    Vector3 move;
 
     enum State { Seek, Straight, Dodge, Cycle, Destroyed };
     State currentState = State.Cycle;
@@ -27,25 +27,19 @@ public class EnemyPlane : MonoBehaviour {
     CycleDir cycleDir;
     float previousErr = 0; // For calculating de/dt
     float sumErr = 0;
-    [SerializeField]
-    float P = -2.0f;
-    [SerializeField]
-    float I = -0.001f;
-    [SerializeField]
-    float D = 0.0f;
+    [SerializeField] float P = -1.0f;
+    [SerializeField] float I = -0.01f;
+    [SerializeField] float D = 0.05f;
 
     // Defines other behavior
     float currentHealth = 100.0f;
     Vector3 shootDir = Vector3.one;
     const float bulletSpread = 1.0f;
 
-    [SerializeField]
-    ParticleSystem dirtParticleFX;
-    [SerializeField]
-    ParticleSystem smokeParticleFX;
+    [SerializeField] ParticleSystem dirtParticleFX;
+    [SerializeField] ParticleSystem smokeParticleFX;
 
-    [FMODUnity.EventRef, SerializeField]
-    string MachineGunEvent;
+    [FMODUnity.EventRef, SerializeField] string MachineGunEvent;
     FMOD.Studio.EventInstance MachineGun;
 
     // Use this for initialization
@@ -58,12 +52,16 @@ public class EnemyPlane : MonoBehaviour {
     void Update () {
         currentState = CheckForStateTransition();
 
+        // Planes will always move forward
+        move = transform.forward * speed * Time.deltaTime;
+
         // Steering is determined by state
         if (currentState == State.Cycle)
         {
             // Keeps plane parallel with the ground
             Quaternion roll = Quaternion.LookRotation(transform.forward, Vector3.up);
             transform.rotation = Quaternion.Lerp(transform.rotation, roll, 10*Time.deltaTime);
+
             // PID controller for smooth steering
             float pid = PID();
             GraphDbg.Log("PID", pid);   // DEBUG
@@ -90,12 +88,12 @@ public class EnemyPlane : MonoBehaviour {
         else if (currentState == State.Straight)
         {
             // Planes at 1.5x speed in straight mode
-            transform.position += transform.forward * (0.5f * speed) * Time.deltaTime;
+            move = move * 1.5f;
             Shoot();
         }
         else if (currentState == State.Dodge)
         {
-            transform.position += currentDodgeVec * speed * Time.deltaTime;
+            move += currentDodgeVec * speed * Time.deltaTime;
             if (dodgeDir == Dodge.Left)
             {
                 transform.Rotate(Vector3.forward * 360 * Time.deltaTime, Space.Self);
@@ -132,8 +130,8 @@ public class EnemyPlane : MonoBehaviour {
             }
         }
 
-        // Planes will always move forward
-        transform.position += transform.forward * speed * Time.deltaTime;
+        // Update position ONCE
+        transform.position += move;
     }
 
     /*************************
@@ -280,10 +278,6 @@ public class EnemyPlane : MonoBehaviour {
         return shootDir;
     }
 
-    private void OnDestroy()
-    {
-        
-    }
 
     private void OnCollisionEnter(Collision collision)
     {

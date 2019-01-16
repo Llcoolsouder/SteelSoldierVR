@@ -62,7 +62,6 @@ public class Missile : MonoBehaviour
         GameObject explosion = Instantiate(explosionPrefab, transform.position, transform.rotation, transform);
         ParticleSystem shrapnel = explosion.transform.Find("FireShrapnel").GetComponent<ParticleSystem>();
         Destroy(this.gameObject, shrapnel.main.duration + shrapnel.main.startLifetime.constantMax);
-        Debug.Log("Shrapnel Life: " + shrapnel.main.startLifetime.constantMax);
     }
 
     void DeleteMissile()
