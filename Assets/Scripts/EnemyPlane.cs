@@ -248,15 +248,15 @@ public class EnemyPlane : MonoBehaviour {
         //bool bulletHit = Physics.Raycast(transform.position, shootDir, out hit);
         if (bulletHit)
         {
-            Debug.Log("BULLET HIT! " + hit.collider.name);
+            //Debug.Log("BULLET HIT! " + hit.collider.name);
             if (hit.collider.tag.Equals("Player"))
             {
-                Debug.Log("Player hit!");
+            //    Debug.Log("Player hit!");
                 hit.collider.gameObject.GetComponent<PlayerStatus>().DamagePlayer(1.0f);
             }
             if (hit.collider.tag.Equals("Terrain"))
             {
-                Debug.Log("Terrain hit!");
+            //   Debug.Log("Terrain hit!");
                 GameObject dirt = Instantiate(dirtParticleFX.gameObject, hit.point, Quaternion.identity);
                 Destroy(dirt.gameObject, dirtParticleFX.main.duration + dirtParticleFX.main.startLifetime.constantMax);
             }

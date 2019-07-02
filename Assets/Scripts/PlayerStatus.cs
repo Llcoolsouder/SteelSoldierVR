@@ -21,7 +21,7 @@ public class PlayerStatus : MonoBehaviour {
 	}
 
     public void DamagePlayer(float amount) {
-        Debug.Log("Damage taken!");
+        //Debug.Log("Damage taken!");
         playerHealth -= amount;
         healthSlider.value = playerHealth;
 

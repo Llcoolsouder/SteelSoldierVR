@@ -1,5 +1,6 @@
 {
-   "app_key" : "application.generated.unity.steamvr.exe",
+   "alias_info" : {},
+   "app_key" : "application.generated.unity.steelsoldier.exe",
    "bindings" : {
       "/actions/buggy" : {
          "sources" : [
@@ -149,7 +150,7 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/default/in/grabgrip"
+                     "output" : "/actions/default/in/laser"
                   }
                },
                "mode" : "button",
@@ -176,6 +177,60 @@
             },
             {
                "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/squeeze"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/fly"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/missile"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/x"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/laser"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/squeeze"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/teleport"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/joystick"
+            },
+            {
+               "inputs" : {
                   "click" : {
                      "output" : "/actions/default/in/interactui"
                   }
@@ -190,52 +245,44 @@
                   }
                },
                "mode" : "button",
-               "parameters" : {
-                  "click_activate_threshold" : "0.8",
-                  "click_deactivate_threshold" : "0.7"
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/fly"
+                  }
                },
+               "mode" : "trigger",
                "path" : "/user/hand/right/input/trigger"
             },
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/default/in/teleport"
+                     "output" : "/actions/default/in/missile"
                   }
                },
                "mode" : "button",
-               "path" : "/user/hand/right/input/joystick"
+               "path" : "/user/hand/right/input/x"
             },
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/default/in/grabgrip"
+                     "output" : "/actions/default/in/missile"
                   }
                },
                "mode" : "button",
-               "parameters" : {
-                  "click_activate_threshold" : "0.8",
-                  "click_deactivate_threshold" : "0.7",
-                  "force_input" : "force"
-               },
-               "path" : "/user/hand/right/input/grip"
+               "path" : "/user/hand/right/input/a"
             },
             {
-               "inputs" : {
-                  "pull" : {
-                     "output" : "/actions/default/in/squeeze"
-                  }
-               },
-               "mode" : "trigger",
-               "path" : "/user/hand/left/input/grip"
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/left/input/y"
             },
             {
-               "inputs" : {
-                  "pull" : {
-                     "output" : "/actions/default/in/squeeze"
-                  }
-               },
-               "mode" : "trigger",
-               "path" : "/user/hand/right/input/grip"
+               "inputs" : {},
+               "mode" : "button",
+               "path" : "/user/hand/right/input/y"
             }
          ]
       },
@@ -266,9 +313,90 @@
                "path" : "/user/hand/right/input/joystick"
             }
          ]
+      },
+      "/actions/steelsoldier" : {
+         "sources" : [
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/steelsoldier/in/fly"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/steelsoldier/in/laser"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_duration" : "0.1",
+                  "haptic_frequency" : "1307"
+               },
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/steelsoldier/in/missile"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_duration" : "0.5",
+                  "haptic_frequency" : "115"
+               },
+               "path" : "/user/hand/left/input/x"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/steelsoldier/in/laser"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/steelsoldier/in/fly"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/steelsoldier/in/missile"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/x"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/steelsoldier/in/missile"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_duration" : "0.5",
+                  "haptic_frequency" : "157"
+               },
+               "path" : "/user/hand/right/input/a"
+            }
+         ]
       }
    },
    "controller_type" : "oculus_touch",
-   "description" : "",
-   "name" : "oculus_touch"
+   "description" : "steel soldier bindings",
+   "name" : "steelsoldier_oculus_touch",
+   "options" : {},
+   "simulated_actions" : []
 }

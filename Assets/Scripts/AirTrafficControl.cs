@@ -42,7 +42,7 @@ public class AirTrafficControl : MonoBehaviour {
         {
             seekingPlane = allPlanes[Random.Range(0, allPlanes.Count-1)];
             seekingPlane.SetToSeek();
-            Debug.Log("Set seek");
+            //Debug.Log("Set seek");
         }
 
         if ((planeCount < (totalPlanes - planeSpawnPer)) && allPlanes.Count < 10)
